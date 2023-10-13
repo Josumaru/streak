@@ -1,8 +1,7 @@
 ```js
 /*
-
 This is simple program to save your GitHub Streak
-Currently only work on linux or run using WSL and also Android terminal emulator and Linux environment app
+Currently only work on linux
 
 [TODO]
     a. Make autostart
