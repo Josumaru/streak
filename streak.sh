@@ -20,15 +20,3 @@ if [[ -f .env ]];then
 else
     echo -e "Set up your .env with :\nUSERNAME=YOUR_GITHUB_USERNAME\nPASSWORD=YOUR_GITHUB_PASSWORD"
 fi
-
-
-# if [[ $date -ne $validator ]]; then
-#     sed -i "2s/.*/const [streak, setStreak] = useState($streak);/" readme.md
-#     sed -i "3s/.*/const date = $date;/" readme.md
-# fi
-
-
-# echo $messages
-# git add .
-# git commit -m "$messages"
-# git push

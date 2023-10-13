@@ -1,5 +1,5 @@
 ```js 
-const [streak, setStreak] = useState(2);
+const [streak, setStreak] = useState(3);
 const date = 14;
 const streakSaver = () => {
     setIsStreak(streak + 1);
