@@ -6,7 +6,6 @@ validator=$(cat readme.md | sed -n "$((line+1))p" | grep -oE "[0-9]+")
 day=$(date +%d)
 streak=$((streak+1))
 messages="Saving $streak Streak Today"
-echo $line
 
 if [[ -f .env ]];then
     source .env
