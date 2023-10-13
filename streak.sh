@@ -13,7 +13,7 @@ if [[ -f .env ]];then
         sed -i "3s/.*/const date = $date;/" readme.md
         git add .
         git commit -m "$messages"
-        git push https://$USERNAME:$PASSWORD@github.com/$USERNAME/streak-saver.git
+        git push https://$USERNAME:$PASSWORD@github.com/$USERNAME/streak.git
     else
         echo "Already Push today"
     fi
