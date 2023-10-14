@@ -7,7 +7,7 @@ day=$(date +%d)
 streak=$((streak+1))
 messages="Saving $streak Streak Today"
 
-if [[ -f .env ]];then
+if [[ -f .env ]]; then
     source .env
     if [[ $day -ne $validator ]]; then
         sed -i "${line}s/.*/const [streak, setStreak] = useState($streak);/" readme.md
@@ -18,6 +18,7 @@ if [[ -f .env ]];then
         echo "$messages at $(date)" >> streak.log
     else
         echo "Reboot at $(date) and Already Save Today" >> streak.log
+        echo "Already save today"
     fi
 else
     echo -e "Set up your .env with :\nUSERNAME=YOUR_GITHUB_USERNAME\nPASSWORD=YOUR_GITHUB_PASSWORD"
