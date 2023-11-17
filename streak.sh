@@ -23,3 +23,5 @@ if [[ -f .env ]]; then
 else
     echo -e "Set up your .env with :\nUSERNAME=YOUR_GITHUB_USERNAME\nPASSWORD=YOUR_GITHUB_PASSWORD"
 fi
+
+echo "Git" >> ~/streak.log
