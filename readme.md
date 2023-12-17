@@ -9,8 +9,8 @@ Currently only work on linux
     c. ~~~~~~~~~~~~~~~~~~~~~~
 */
 
-const [streak, setStreak] = useState(28);
-const date = 17;
+const [streak, setStreak] = useState(29);
+const date = 18;
 const streakSaver = () => {
     setStreak(streak + 1);
     console.log(`Current streak is ${streak}`);
