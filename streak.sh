@@ -3,7 +3,7 @@
 line=$(grep -n "useState" readme.md | cut -d ":" -f 1)
 streak=$(cat readme.md | sed -n "${line}p" | grep -oE "[0-9]+")
 validator=$(cat readme.md | sed -n "$((line+1))p" | grep -oE "[0-9]+")
-day=$(date +%d)
+day=$(date +%d | sed 's/^0*//')
 streak=$((streak+1))
 messages="Saving $streak Streak Today"
 
