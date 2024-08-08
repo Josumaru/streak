@@ -9,7 +9,7 @@ Currently only work on linux
     c. ~~~~~~~~~~~~~~~~~~~~~~
 */
 
-const [streak, setStreak] = useState(106);
+const [streak, setStreak] = useState(107);
 const date = 8;
 const streakSaver = () => {
     setStreak(streak + 1);
